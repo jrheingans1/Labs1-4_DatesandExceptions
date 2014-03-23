@@ -27,7 +27,7 @@ public class DateService {
             Date d = calendar.getTime();
             System.out.println(df.format(d) + "\t - Calendar Object");
         } catch (ParseException pe) {
-            System.out.println("Illegal format -- Eample: March 15, 2014 2:30 PM");
+            System.out.println("Illegal format -- Example: March 15, 2014 2:30 PM");
         }
     }
 

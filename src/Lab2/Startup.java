@@ -14,7 +14,7 @@ public class Startup {
     public static void main(String[] args) {
         DateService ds = new DateService();
 
-        String date = "03/15/2014";
+        String date = "03/22/2014";
 
         ds.convertStringToDate(date);
 

@@ -24,12 +24,6 @@ public class Invoice {
         return dateFormat.format(getInvoiceDate().getTime());
     }
 
-//    public Calendar getFutureDueDate() {
-//        setDueDate((Calendar) getInvoiceDate().clone());
-//        getDueDate().add(Calendar.DATE, getGracePeriod());
-//        return getDueDate();
-//    }
-
     public String getDueDateAsString() {
         setSimpleDateFormat(new SimpleDateFormat("MM/dd/YYYY"));
         setDueDate((Calendar) getInvoiceDate().clone());

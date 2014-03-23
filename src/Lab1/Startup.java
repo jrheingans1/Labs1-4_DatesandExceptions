@@ -14,7 +14,6 @@ public class Startup {
     public static void main(String[] args) {
         Invoice i = new Invoice();
         System.out.println("Invoice Date: " + i.getFormattedInvoiceDate());
-//        System.out.println("Due Date " + i.getFutureDueDate());
         System.out.println("Due Date " + i.getDueDateAsString());
     }
 

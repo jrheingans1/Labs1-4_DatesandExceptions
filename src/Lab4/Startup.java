@@ -18,14 +18,14 @@ public class Startup {
         String date = "03/15/2014";
         try {
             ds.convertStringToDate(date);
-        } catch (RuntimeException rte) {
-            System.out.println(rte.getLocalizedMessage());
+        } catch (NullPointerException | EmptyValueException eve) {
+            System.out.println(eve.getLocalizedMessage());
         }
         date = "March 15, 2014 2:30 PM";
         try {
             ds.convertStringToCalendar(date);
-        } catch (RuntimeException rte) {
-            System.out.println(rte.getLocalizedMessage());
+        } catch (NullPointerException | EmptyValueException eve) {
+            System.out.println(eve.getLocalizedMessage());
         }
     }
 
